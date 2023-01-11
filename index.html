@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+  <body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">FIFA World Cup Qatar 2022</h1>
+            <p id="description" class="description-center">Journalist Accreditation Form</p>
+        </header>
+    
+        <form id="survey-form">
+            <div class="form-g">
+               <label for="name"id="name-label">Name</label>
+               <input type="text" id="name" class="form-control" placeholder="Enter your first name" required>
+            </div>
+
+            <div class="form-g">
+                <label for="surname"id="surnamelabel">Name</label>
+                <input type="text" id="surname" class="form-control" placeholder="Enter your last name" required>
+            </div> 
+
+    
+            <div class="form-g">
+                <label for="email-label" id="email-label">Email</label>
+                <input type="email" id="email" class="form-control" placeholder="Enter your email address" required>
+            </div>
+     
+
+            <div class="form-g">
+                <label for="number" id="number-label">Age <span> (Optional)</span></label>
+                <input type="number" name="age" id="number" min="14" max="99" placeholder="Age" required>
+
+            </div>
+
+            <div class="form-g">
+                <p>What will be your     role for this event?</p>
+                <select name="role" id="dropdown" class="form-control" required>
+                    <option value="Student">Student</option>
+                    <option value="Journalist">Journalist</option>
+                    <option value="Photographer">Photographer</option>
+                    <option value="Turist">Turist</option>
+                    <option value="preferNo">Prefer not say</option>
+                     <option value="other">Other</option>
+                </select>
+            </div>
+
+             <div class="form-g">
+                <p>Would you like to receive any FIFA information content?</p>
+                <label >
+                    <input value="Yes" name="user-recommend" type="radio" class="input-radio" checked>Yes
+                </label>
+                <label >
+                    <input value="No" name="user-recommend" type="radio" class="input-radio" checked>No
+                </label>
+            </div>
+
+            <div class="form-g">
+                <p>Do you speak any of these languages?</p>
+                <select name="lenguage" id="most-like" class="form-control" required>
+                   <option value="French">French</option>
+                   <option value="English">English</option>
+                   <option value="Arabic">Arabic</option>
+                   <option value="Spanish">Spanish</option>
+                   <option value="Portuguese">Portuguese</option>
+                   <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-g">
+               <p>Which of these countries would you like to be finalists of the World Cup? <span class="clue">(check all that apply)</span></p>
+               <label>
+                   <input type="checkbox" name="prefer" class="input-checkbox" value="Argentina">ARGENTINE
+               </label>
+               <label>
+                   <input type="checkbox" name="prefer" class="input-checkbox" value="Francia">FRANCE
+                </label>
+                <label>
+                    <input type="checkbox" name="prefer" class="input-checkbox" value="Alemania">GERMANY
+                </label>
+                <label>
+                    <input type="checkbox" name="prefer" class="input-checkbox" value="Brasil">BRAZIL
+                </label>
+                <label>
+                    <input type="checkbox" name="prefer" class="input-checkbox" value="Inglaterra">ENGLAND
+                </label>
+                <label>
+                    <input type="checkbox" name="prefer" class="input-checkbox" value="España">SPAIN
+                </label>
+                <label>
+                    <input type="checkbox" name="prefer" class="input-checkbox" value="Belguica">BELGIUM
+                </label>
+                <label>
+                    <input type="checkbox" name="prefer" class="input-checkbox" value="Other">OTHER
+                </label>
+            </div>
+
+            <div class="form-g">
+               <p>Any comments or suggestions?</p>
+                <textarea name="comment" id="coment" class="input-textarea" placeholder="If you have any comments leave them here.."></textarea>
+            </div>
+            <div class="form-g">
+               <button type="submit" id="submit" class="submit-button">Submit
+               </button>
+            </div>
+      </form> 
+    </div> 
+  </body>
+</html>
